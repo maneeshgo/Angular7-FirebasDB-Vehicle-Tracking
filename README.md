@@ -1,6 +1,6 @@
 This project is build for mobile app using phonegap tool
 
-## Steps to run this project-
+## Steps to run this project
 
 
 1- clone or download this project
