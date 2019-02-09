@@ -1,0 +1,56 @@
+.cvs-spinner {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    .cvs-spinner-wrapper {
+        height: 200px;
+        width: 240px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+        background: #fff;
+        position: absolute;
+        border-radius: 10px;
+
+        .cvs-spinner-container {
+            padding: 20px;
+
+            .cvs-spinner-img {
+                width: 50%;
+            }
+
+            .cvs-spinner-text {
+                color: #000;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.black-backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.white-backdrop {
+    background: rgba(255, 255, 255, 1);
+
+    .cvs-spinner-wrapper {
+        box-shadow: none;
+    }
+}
+
+::ng-deep {
+    .noscroll {
+        overflow: hidden;
+    }
+}

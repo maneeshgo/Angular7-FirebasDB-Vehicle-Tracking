@@ -1,0 +1,5 @@
+// mixins
+@mixin error-rule {
+    border: 2px solid #cc0000 !important;
+    background-color: #fcf2f2 !important;
+  }  

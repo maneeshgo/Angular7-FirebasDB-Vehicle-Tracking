@@ -1,0 +1,9 @@
+<div class="cvs-spinner cvs-spinner-backdrop" *ngIf="display" aria-modal="true" tabindex="-1"
+[ngClass]="{'white-backdrop': config?.backdrop == 'white', 'black-backdrop': config?.backdrop != 'white'}">
+    <div class="cvs-spinner-wrapper" tabindex="0">
+        <div class="cvs-spinner-container" aria-live="assertive" aria-describedby="spinnerText">
+            <img class="cvs-spinner-img" [src]="config?.imageSource" />
+            <div class="cvs-spinner-text bold black f18" id="spinnerText" [innerHTML]="config?.spinnerText"></div>
+        </div>
+    </div>
+</div>
