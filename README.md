@@ -1,4 +1,4 @@
-This project use Mammoth Js as third party library. see https://mike.zwobble.org/projects/mammoth/
+This project is build for mobile app using phonegap tool
 
 ## Steps to run this project-
 
