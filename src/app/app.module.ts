@@ -11,6 +11,9 @@ import { HeaderComponent } from './shared/components/layout/header/header.compon
 import { AuthErrorComponent } from './shared/components/error/auth-error/auth-error.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SpinnerComponent } from './shared/components/layout/spinner/spinner.component';
+import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
+import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
+import { VehicleDetailComponent } from './vehicle-detail/vehicle-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SpinnerComponent } from './shared/components/layout/spinner/spinner.com
     HeaderComponent,
     AuthErrorComponent,
     DashboardComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    VehicleAddComponent,
+    VehicleListComponent,
+    VehicleDetailComponent
   ],
   imports: [
     BrowserModule,

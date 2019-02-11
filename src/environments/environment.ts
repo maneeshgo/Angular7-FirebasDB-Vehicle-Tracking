@@ -5,7 +5,7 @@
 import { EnvBaseConfig } from './environment.config';
 
 /**
- * @author: Shoukath Mohammed
+ * @author: Manish Gupta
  */
 // set the local environment to true
 class EnvConfig extends EnvBaseConfig {
@@ -13,6 +13,15 @@ class EnvConfig extends EnvBaseConfig {
         super();
         this.development = true;
     }
+
+    firebaseConfig = {
+      apiKey: 'AIzaSyB_MGp73cBj-Y-CP_WMZfivc5hBViTZwxU',
+      authDomain: 'jewellery-shop-814b1.firebaseapp.com',
+      databaseURL: 'https://jewellery-shop-814b1.firebaseio.com',
+      projectId: 'jewellery-shop-814b1',
+      storageBucket: 'jewellery-shop-814b1.appspot.com',
+      messagingSenderId: '52570091962'
+    };
 }
 
 // export the new configuration
