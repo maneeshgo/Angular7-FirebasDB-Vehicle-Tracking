@@ -3,6 +3,7 @@ import * as firebase from 'firebase';
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { UserService } from '../shared/services/user/user.service';
+import { Router } from '@angular/router';
 
 
 declare const cordova: any;
@@ -15,7 +16,7 @@ declare const cordova: any;
 export class DashboardComponent implements OnInit {
   public users: any;
   public scanResult: string;
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
     // firebase.initializeApp(environment.firebaseConfig);
@@ -35,6 +36,6 @@ export class DashboardComponent implements OnInit {
   }
 
   addVehicle() {
-    alert('WIP....');
+    this._router.navigate(['add-new']);
   }
 }
